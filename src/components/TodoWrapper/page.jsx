@@ -3,6 +3,7 @@ import { Todo } from '../Todo/page';
 import { v4 as uuidv4 } from 'uuid';
 import { Button } from '../Button/page';
 import { EditTodo } from '../Edit/page';
+import { CurrentDate } from '../Date/page';
 uuidv4();
 
 export const TodoWrapper = () => {
@@ -32,6 +33,7 @@ export const TodoWrapper = () => {
     }
     return (
         <div>
+            <CurrentDate />
             <Todo addTodo={addTodo} />
             {todos.map((todo, index) => (
                 todo.isEditing ? (

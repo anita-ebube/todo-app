@@ -16,15 +16,9 @@ export const EditTodo =({editTodo,task})=> {
         <div>
            
             <form onSubmit={handleSubmit}>
-                <input type="text"  className='border-2 border-black w-full' value={value} onChange={(e) => setValue(e.target.value)}/>
-                <button className='bg-black text-white w-full  my-1 '>Add</button>
+                <input type="text"  className='border-2 bg-transparent border-[#8687E7] p-1 outline-none' value={value} onChange={(e) => setValue(e.target.value)}/>
+                <button className='bg-[#8687E7] text-white my-1 p-[5.65px] '>Edit</button>
             </form>
-
-            <div className='lg:mx-5 mx-3'>
-                <button className='border-2 border-black lg:w-[32%] px-4'>All</button>
-                <button className='border-2 border-black lg:w-[32%] px-4 m-1'>Active</button>
-                <button className='border-2 border-black lg:w-[32%] px-4'>Completed</button>
-            </div>
         </div>
 
     )

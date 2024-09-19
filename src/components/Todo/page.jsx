@@ -12,11 +12,13 @@ export const Todo =({addTodo})=> {
     }
     return (
         <div>
-            <h1 className='flex justify-center items-center text-2xl'>Todo</h1>
-            <p className='flex justify-center items-center'>What needs to be done?</p>
-            <form onSubmit={handleSubmit}>
-                <input type="text"  className='border-2 border-black w-full' value={value} onChange={(e) => setValue(e.target.value)}/>
-                <button className='bg-black text-white w-full  my-1 '>Add</button>
+            <div className="flex justify-center items-center">
+            <h1 className=' text-2xl my-5'>Plan your Day</h1>
+            <h2>&#128540;</h2>
+            </div>
+            <form onSubmit={handleSubmit} className="flex justify-center items-center">
+                <input type="text"  className='border-2 py-[6px] border-[#8687E7] bg-transparent outline-none px-3' value={value} onChange={(e) => setValue(e.target.value)}/>
+                <button className='bg-[#8687E7] text-white p-2 rounded-'>Add</button>
             </form>
 
         </div>
